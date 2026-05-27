@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PartyNow Auth</title>
+  <script>
+    // Redirect back to app with the auth code
+    const params = window.location.search;
+    window.location.href = "partynow://tiktok-auth" + params;
+  </script>
+</head>
+<body>
+  <p>Redirecting back to PartyNow...</p>
+</body>
+</html>
