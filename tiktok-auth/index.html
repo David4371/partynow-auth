@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>PartyNow Auth</title>
-  <script>
-    // Redirect back to app with the auth code
-    const params = window.location.search;
-    window.location.href = "partynow://tiktok-auth" + params;
-  </script>
 </head>
 <body>
+  <script>
+    // Ia toți parametrii din URL (code, state, etc.)
+    const params = window.location.search;
+    // Redirectează înapoi la app cu scheme-ul custom
+    window.location.replace("partynow://tiktok-auth" + params);
+  </script>
   <p>Redirecting back to PartyNow...</p>
 </body>
 </html>
